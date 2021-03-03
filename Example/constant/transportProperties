@@ -1,0 +1,79 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1806                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      transportProperties;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+transportModel Newtonian;
+
+// kinematic viscosity
+nu              2.5e-02;
+
+// Thermal expansion coefficient
+beta            2.0e-04;
+
+// Reference temperature
+TRef            900;
+
+// Laminar Prandtl number
+Pr              3.075e+05;
+
+// Turbulent Prandtl number
+Prt             3.075e+05;
+
+// Diffusion coefficient [m2/s]
+DT              DT  [0 2 -1 0 0 0 0] 0.00015;
+DT2             DT2 [0 2 -1 0 0 0 0] 0.00015;
+DT3             DT3 [0 2 -1 0 0 0 0] 0.00015;
+DT4             DT4 [0 2 -1 0 0 0 0] 0.00015;
+DT5             DT5 [0 2 -1 0 0 0 0] 0.00015;
+DT6             DT6 [0 2 -1 0 0 0 0] 0.00015;
+DT7             DT7 [0 2 -1 0 0 0 0] 0.00015;
+DT8             DT8 [0 2 -1 0 0 0 0] 0.00015;
+
+lambda1             lambda1 [0 0 -1 0 0 0 0] 1.24667E-02;
+
+beta1             beta1 [0 0 0 0 0 0 0] 2.44743E-04;
+
+lambda2            lambda2 [0 0 -1 0 0 0 0] 2.82917E-02;
+
+beta2            beta2 [0 0 0 0 0 0 0] 9.72175E-04;
+
+lambda3            lambda3 [0 0 -1 0 0 0 0] 4.25244E-02;
+
+beta3            beta3 [0 0 0 0 0 0 0] 6.79793E-04;
+
+lambda4            lambda4 [0 0 -1 0 0 0 0] 1.33042E-01;
+
+beta4           beta4 [0 0 0 0 0 0 0] 1.41069E-03;
+
+lambda5            lambda5 [0 0 -1 0 0 0 0] 2.92467E-01;
+
+beta5           beta5 [0 0 0 0 0 0 0] 1.85916e-03;
+
+lambda6           lambda6 [0 0 -1 0 0 0 0] 6.66488E-01;
+
+beta6          beta6 [0 0 0 0 0 0 0] 6.02207E-04;
+
+lambda7           lambda7 [0 0 -1 0 0 0 0] 1.63478E+00;
+
+beta7         beta7 [0 0 0 0 0 0 0] 6.13187E-04;
+
+lambda8          lambda8 [0 0 -1 0 0 0 0] 3.55460E+00;
+
+beta8         beta8 [0 0 0 0 0 0 0] 1.71682E-04;
+
+
+
+// ************************************************************************* //

@@ -1,0 +1,66 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5                                     |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      thermophysicalProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+thermoType
+{
+
+    type            heRhoThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState Boussinesq;
+    specie          specie;
+    energy          sensibleEnthalpy;
+
+}
+
+// LiF BeF ZrF4 UF4 salt
+
+mixture
+{
+
+    specie
+    {
+     	nMoles      1;
+	    molWeight   387; // molar weight [g/mole]
+    }
+
+    equationOfState
+    {
+        rho0     2000; // Density  [kg/m^3]
+        T0       900;
+        beta     2e-04; 
+    }
+
+    thermodynamics
+    {
+        Cp      3000; // Specific heat capacity [J/(kg K)]
+        Hf      0; // heat of fusion
+
+    }
+
+    transport
+    {
+        mu      	50; // dynamic viscosity [ kg m^-1 s^-1  ]
+	    Pr       3.075e+05; // Prandl number  calculated from mu and kappa = 5.53 [ W m^-1 K^-1] and cp Pr = cp*mu/kappa
+    }
+
+
+
+
+}
+
+// ************************************************************************* //
