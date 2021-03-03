@@ -1,0 +1,23 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 6-fa1285188035
+Exec   : buoyantBoussinesqPimpleFoam_noUDNP
+Date   : Sep 18 2020
+Time   : 14:04:00
+Host   : "asnalb-HP-EliteBook-840-G4"
+PID    : 10911
+I/O    : uncollated
+Case   : /home/asnalb/OpenFOAM/asnalb-6.0/OpenFOAM-6-master/applications/solvers/heatTransfer/buoyantBoussinesqPimpleFoam_noUDNP
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
